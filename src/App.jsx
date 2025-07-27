@@ -24,13 +24,16 @@ const router = createBrowserRouter([
     path: "/services",
     element: <><Nav/><Services/></>,
   },
-])
+],
+{
+  basename:"/HomeUi"
+})
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <RouterProvider router={router} />
+    <RouterProvider  router={router} />
  
     </>
   )
